@@ -38,6 +38,7 @@ def cresis_season(y,m=0,d=0,ant1_gre2=1):
     ########################### Here we find the season metadata. This file was produced
     ########################### from an external matlab script named
     season_metadata_path = os.path.dirname(os.path.abspath(__file__))
+    print('Loading Season Metadata from: '+season_metadata_path)
     season_opts = loadmat(season_metadata_path+'/season_metadata.mat')
     
     if isinstance(y,str) == 1:
