@@ -7,7 +7,7 @@ name = "opr_python"
 version = "0.1.0"
 description = "Utilities for reading and restructuring CReSIS radar data in Python (two-way travel time → depth/elevation)."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.0"
 authors = [{ name = "Nick Holschuh", email = "nholschuh@amherst.edu" }]
 maintainers = [{ name = "Nick Holschuh", email = "nholschuh@amherst.edu" }]
 keywords = ["CReSIS", "radar", "glaciology", "geophysics", "cryosphere", "remote sensing", "depth conversion"]
@@ -33,6 +33,9 @@ include-package-data = true
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["opr_python*"]
+
+[tool.setuptools.package-data]
+"opr_python" = ["*.mat"]
 
 [tool.setuptools.package-data]
 # Example: include non-code assets (like default configs) living under opr_python/data
