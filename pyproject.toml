@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opr_python"
+version = "0.1.0"
+description = "Utilities for reading and restructuring CReSIS radar data in Python (two-way travel time → depth/elevation)."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Nick Holschuh", email = "nholschuh@amherst.edu" }]
+maintainers = [{ name = "Nick Holschuh", email = "nholschuh@amherst.edu" }]
+keywords = ["CReSIS", "radar", "glaciology", "geophysics", "cryosphere", "remote sensing", "depth conversion"]
+license = { file = "LICENSE" }
+
+dependencies = [
+  "h5py==3.14.0",
+  "hdf5storage==0.1.19",
+  "mat73==0.65",
+  "matplotlib",
+  "numpy==2.3.2",
+  "pyproj==3.6.1",
+  "scipy==1.16.1"
+]
+
+[project.urls]
+Homepage = "https://example.com/opr_python"
+Source = "https://example.com/opr_python"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["opr_python*"]
+
+[tool.setuptools.package-data]
+# Example: include non-code assets (like default configs) living under opr_python/data
+# "opr_python" = ["data/*"]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.black]
+line-length = 88
+target-version = ["py39", "py310", "py311"]
