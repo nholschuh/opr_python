@@ -5,8 +5,7 @@ Developed by **Nick Holschuh** (Amherst College) — nholschuh@amherst.edu.
 
 ## Overview
 
-This package is intended to simplify the process of reading, converting, and working with CReSIS radar data formats in Python.  
-It includes tools for reading various data files, performing transformations, and preparing datasets for analysis.
+This package is intended to simplify the process of reading and plotting  CReSIS radar imagery in Python.  
 
 ## Install
 
