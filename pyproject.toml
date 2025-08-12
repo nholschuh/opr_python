@@ -37,10 +37,6 @@ include = ["opr_python*"]
 [tool.setuptools.package-data]
 "opr_python" = ["*.mat"]
 
-[tool.setuptools.package-data]
-# Example: include non-code assets (like default configs) living under opr_python/data
-# "opr_python" = ["data/*"]
-
 [tool.pytest.ini_options]
 minversion = "7.0"
 addopts = "-q"
