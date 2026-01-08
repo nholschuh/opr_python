@@ -14,13 +14,15 @@ keywords = ["CReSIS", "radar", "glaciology", "geophysics", "cryosphere", "remote
 license = { file = "LICENSE" }
 
 dependencies = [
-  "h5py",
-  "hdf5storage",
-  "mat73",
-  "matplotlib",
-  "numpy",
-  "pyproj",
-  "scipy"
+    "numpy", 
+    "scipy", 
+    "matplotlib", 
+    "h5py", 
+    "hdf5storage", 
+    "mat73", 
+    "pyproj", 
+    "tqdm", 
+    "xarray", 
 ]
 
 [project.urls]

@@ -1,7 +1,9 @@
+numpy
+scipy
+matplotlib
 h5py
 hdf5storage
 mat73
-matplotlib
-numpy
 pyproj
-scipy
+tqdm
+xarray
