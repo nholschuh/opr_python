@@ -160,4 +160,4 @@ def elevation_shift(data,time,surface,elevation,bed,disp_flag=0):
         
     multiple = surface_elev-multiple_thickness;
 
-    return {'new_data':new_data2, 'shift_amount':shift_amount, 'depth_axis':depth_axis, 'surface_elev':surface_elev, 'bed_elev':bed_elev, 'multiple':multiple}
+    return {'new_data':new_data2, 'shift_amount':shift_amount, 'depth_axis':depth_axis, 'surface_elev':surface_elev, 'bed_elev':bed_elev, 'thickness':thickness, 'multiple':multiple}
